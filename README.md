@@ -6,7 +6,7 @@ It was produced partially in class and online through a set of instructions.<br 
 
 ## Demonstration
 
-[alt text](http://url/to/img.png)
+[alt text](https://github.com/abwilson5729/JPPFINAL/blob/master/Code%20Final.PNG)
 
 ## Getting Started
 
