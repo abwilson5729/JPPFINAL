@@ -1,3 +1,8 @@
+/**
+ * By Andrew Wilson.
+ * code adapted from Oracle.
+ */
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,16 +24,31 @@ public class EmployeeInfo {
     return name;
   }
 
+  /**
+   * getCode returns the department code.
+   */
   public String getCode() {
     return code;
   }
 
+  /**
+   * setName calls the code to create the employee code.
+   */
   public void setName() {
     String nameString = inputName();
     name = new StringBuilder(nameString);
+    /**
+     * call to create the employee code.
+     */
     createEmployeeCode(name);
   }
 
+  /**
+   * Takes the employee name as input and returns the code as first initial + last name. or, if
+   * there is no last name given they will be assigned guest.
+   *
+   * @param name - input of users name
+   */
   public void createEmployeeCode(StringBuilder name) {
     //checkName(name);
     if (checkName(name)) { //valid and contains a space
@@ -57,6 +77,10 @@ public class EmployeeInfo {
     return deptId;
   }
 
+  /**
+   * Makes sure the inputted ID is valid (has 4 letters starting with cap and followed by 2 digits).
+   * if the ID is not valid then it is set to None01
+   */
   public void setDeptId() {
     String temp;
     System.out.println("Enter your departmentID");
@@ -85,17 +109,29 @@ public class EmployeeInfo {
     }
   }
 
+  /**
+   * toString.
+   *
+   * @return - returns the employee code and the department ID
+   */
   public String toString() {
-    return "Code: " + code
-        + "\n Dept Id: " + deptId;
+    return "Employee Code: " + code
+        + "\n Department Id: " + deptId;
   }
 
+  /**
+   * Takes in the Department ID and for security reverses it.
+   *
+   * @param id - Department ID
+   * @return - returns the reversed ID
+   */
   public String reverseString(String id) {
     String temp = "";
     for (int i = id.length(); i > 0; i--) {
       temp = temp + id.charAt(i - 1);
     }
-    return temp;
+    id = temp;
+    return id;
   }
 
 }

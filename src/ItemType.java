@@ -1,5 +1,6 @@
-/**.
- * By Andrew Wilson, code adapted from Oracle
+/**
+ * By Andrew Wilson.
+ * code adapted from Oracle.
  */
 
 /**.

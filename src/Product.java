@@ -1,8 +1,9 @@
-import java.util.Date;
-
 /**
- * By Andrew Wilson, code adapted from Oracle
+ * By Andrew Wilson.
+ * code adapted from Oracle.
  */
+
+import java.util.Date;
 
 /**.
  * abstract class product, implements item, contains all info about the products who manufactured

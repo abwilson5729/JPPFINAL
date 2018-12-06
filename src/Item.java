@@ -1,11 +1,12 @@
-import java.util.Date;
-
-/**.
- * By Andrew Wilson, code adapted from Oracle
+/**
+ * By Andrew Wilson.
+ * code adapted from Oracle.
  */
 
-/**.
- * Interface for items
+import java.util.Date;
+
+/**
+ * Interface for items.
  */
 public interface Item {
 

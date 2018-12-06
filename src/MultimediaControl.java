@@ -1,3 +1,8 @@
+/**
+ * By Andrew Wilson.
+ * code adapted from Oracle.
+ */
+
 public interface MultimediaControl {
 
   public void play();

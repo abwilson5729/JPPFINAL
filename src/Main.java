@@ -1,9 +1,19 @@
+/**
+ * By Andrew Wilson.
+ * code adapted from Oracle.
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
 
+  /**
+   * Main method for testing.
+   *
+   * @param args - main arguments
+   */
   public static void main(String[] args) {
 
     // Write one line of code to create an ArrayList of products
@@ -30,6 +40,11 @@ public class Main {
   // Step 15
   // Complete the header for the testCollection method here
 
+  /**
+   * ArrayList created to hold teh items, Audio players and Movie Players.
+   *
+   * @return - the products produced in the arraylist
+   */
   public static ArrayList<Product> testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
@@ -50,6 +65,12 @@ public class Main {
 
   // Step 16
   // Create print method here
+
+  /**
+   * Print for the ArrayList of products.
+   *
+   * @param list - Arraylist holding products
+   */
   public static void print(ArrayList<Product> list) {
     for (Product product : list) {
       System.out.println(product);
